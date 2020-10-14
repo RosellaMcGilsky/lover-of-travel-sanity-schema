@@ -6,9 +6,11 @@ import schemaTypes from "all:part:@sanity/base/schema-type"
 
 // Document Types
 import post from "../src/Blog/post"
+import postTag from "../src/Blog/postTag"
+import about from "../src/Pages/about"
 
 // Object Tyeps
-import postTag from "../src/Blog/postTag"
+
 import cairnTip from "../src/Blog/cairnTip"
 import calloutBox from "../src/Blog/calloutBox"
 import trailStats from "../src/Blog/trailStats"
@@ -26,6 +28,7 @@ export default createSchema({
   types: schemaTypes.concat([
     post,
     postTag,
+    about,
     siteImage,
     cairnTip,
     calloutBox,

@@ -1,10 +1,16 @@
-import { ARRAY_1, STRING_1, STRING_2 } from "../constants"
+import { ARRAY_1, HEADLINE, STRING_1, STRING_2 } from "../constants"
 
 export default {
   name: "trailStats",
   title: "Trail Stats",
   type: "object",
   fields: [
+    {
+      name: HEADLINE,
+      title: "Trail Name",
+      description: "What is the offical name of the trail?",
+      type: "string",
+    },
     {
       name: STRING_1,
       title: "Trail Length",

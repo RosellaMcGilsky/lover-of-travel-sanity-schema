@@ -1,10 +1,22 @@
-import { BUTTON_TEXT, EXTERNAL_LINK, SINGLE_BLOCK_CONTENT } from "../constants"
+import {
+  BUTTON_TEXT,
+  EXTERNAL_LINK,
+  HEADLINE,
+  SINGLE_BLOCK_CONTENT,
+} from "../constants"
 
 export default {
   name: "calloutBox",
   title: "Callout Box",
   type: "object",
   fields: [
+    {
+      name: HEADLINE,
+      title: "Callout Headline",
+      description:
+        "Write a compelling headline to get people to read the callout box.",
+      type: "string",
+    },
     {
       name: SINGLE_BLOCK_CONTENT,
       title: "Enter Callout Content",

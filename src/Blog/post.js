@@ -47,7 +47,7 @@ export default {
       name: IMAGE_1,
       title: "Feature Post Image",
       description: "This is your feature image. Try to make it... 1440x756.",
-      type: "image",
+      type: "siteImage",
     },
     {
       name: "publishDate",
