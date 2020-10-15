@@ -26,5 +26,3 @@ export default {
     },
   ],
 }
-
-// git@lover_of_travel:RosellaMcGilsky/lover-of-travel-sanity-schema.git
