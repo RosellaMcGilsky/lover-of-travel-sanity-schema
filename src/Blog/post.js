@@ -35,6 +35,7 @@ export default {
         source: HEADLINE,
         maxLength: 96,
       },
+      validation: (Rule) => Rule.required(),
     },
     {
       name: ARRAY_1,
@@ -42,25 +43,21 @@ export default {
       description: "Keep it to two or three max. Focused posts.",
       type: "array",
       of: [{ type: "reference", to: { type: "postTag" } }],
+      validation: (Rule) => Rule.required(),
     },
     {
       name: IMAGE_1,
       title: "Feature Post Image",
       description: "This is your feature image. Try to make it... 1440x756.",
       type: "siteImage",
+      validation: (Rule) => Rule.required(),
     },
     {
       name: "publishDate",
       title: "Published Date",
       description: "Not going to use this yet. But it might be good to have.",
       type: "datetime",
-    },
-    {
-      name: TYPE_TEXT_DECSCRIPTION,
-      title: "Blog Card Teaser Copy",
-      description: "A short sentence enticing the visitor to read this post.",
-      type: "text",
-      rows: 5,
+      validation: (Rule) => Rule.required(),
     },
     {
       name: SINGLE_BLOCK_CONTENT,

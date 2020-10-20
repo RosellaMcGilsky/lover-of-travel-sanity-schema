@@ -8,6 +8,7 @@ export default {
     {
       name: IMAGE_1,
       title: "Image",
+      description: "This image needs to be 1000x800",
       type: "image",
     },
     {
