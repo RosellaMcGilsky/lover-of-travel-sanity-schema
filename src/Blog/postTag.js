@@ -12,6 +12,7 @@ export default {
       title: "Title",
       description: "This is one or two words. Keep it short and descriptive.",
       type: "string",
+      validation: (Rule) => Rule.required(),
     },
     {
       name: STRING_2,

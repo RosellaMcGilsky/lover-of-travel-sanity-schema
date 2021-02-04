@@ -17,6 +17,7 @@ export default {
       name: HEADLINE,
       title: "Blog Post Title",
       type: "string",
+      validation: (Rule) => Rule.required(),
     },
     {
       name: SOCIAL_SHARE_INFO,

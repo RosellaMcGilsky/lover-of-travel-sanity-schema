@@ -16,6 +16,7 @@ export default {
       description:
         "Write a compelling headline to get people to read the callout box.",
       type: "string",
+      validation: (Rule) => Rule.required(),
     },
     {
       name: SINGLE_BLOCK_CONTENT,
@@ -23,6 +24,7 @@ export default {
       description:
         "This is somethign important. It could be an affiliate product or something urgent about the topic you're talking about.",
       type: "blockContent",
+      validation: (Rule) => Rule.required(),
     },
     {
       name: BUTTON_TEXT,

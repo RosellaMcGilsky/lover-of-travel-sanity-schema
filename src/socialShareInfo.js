@@ -11,12 +11,14 @@ export default {
       title: "Social Share Headline:",
       description: "A short but enticing headline to make people click.",
       type: "string",
+      validation: (Rule) => Rule.required(),
     },
     {
       name: SLUG,
       title: "Social Share Slug:",
       description: "Check this against the real url on the site. Ask Dan.",
       type: "slug",
+      validation: (Rule) => Rule.required(),
     },
     {
       name: TYPE_TEXT_DECSCRIPTION,
@@ -25,6 +27,7 @@ export default {
         "A brief and really enticing description of the page or post to entice the click.",
       type: "text",
       rows: 5,
+      validation: (Rule) => Rule.required(),
     },
     {
       name: IMAGE_1,
@@ -32,6 +35,7 @@ export default {
       description:
         "This is the image for Facebook and Twitter. Dimensions: 1200x630.",
       type: "image",
+      validation: (Rule) => Rule.required(),
     },
   ],
 }

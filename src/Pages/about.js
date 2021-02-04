@@ -11,6 +11,7 @@ export default {
       name: HEADLINE,
       title: "About Page Headline",
       type: "string",
+      validation: (Rule) => Rule.required(),
     },
     {
       name: SOCIAL_SHARE_INFO,
@@ -18,11 +19,13 @@ export default {
       description:
         "This allows for sharing thumbnails, titles, and descriptions. Fill this out!",
       type: "socialShareInfo",
+      validation: (Rule) => Rule.required(),
     },
     {
       name: SINGLE_BLOCK_CONTENT,
       title: "About Page Content",
       type: "blockContent",
+      validation: (Rule) => Rule.required(),
     },
   ],
 }

@@ -11,6 +11,7 @@ export default {
       description:
         "Enter only the video id. The string after the ?v= (www.youtube.com/watch?v=IQQ8IK6nIB8) In this case the id is IQQ8IK6nIB8",
       type: "string",
+      validation: (Rule) => Rule.required(),
     },
   ],
 }

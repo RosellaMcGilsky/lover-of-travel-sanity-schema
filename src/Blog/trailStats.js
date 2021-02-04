@@ -10,18 +10,21 @@ export default {
       title: "Trail Name",
       description: "What is the offical name of the trail?",
       type: "string",
+      validation: (Rule) => Rule.required(),
     },
     {
       name: STRING_1,
       title: "Trail Length",
       description: "The total length in miles for the trail one way.",
       type: "string",
+      validation: (Rule) => Rule.required(),
     },
     {
       name: STRING_2,
       title: "Elevation Gain",
       description: "Total elevation gain of the trail.",
       type: "string",
+      validation: (Rule) => Rule.required(),
     },
     {
       name: ARRAY_1,
@@ -36,6 +39,7 @@ export default {
           { value: "Point to Point", title: "Point to Point" },
         ],
       },
+      validation: (Rule) => Rule.required(),
     },
   ],
 }

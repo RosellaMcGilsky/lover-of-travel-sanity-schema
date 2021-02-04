@@ -11,6 +11,7 @@ export default {
       description:
         "This is a tip about a trail... about the town... a helpful tip to help readers find their way.",
       type: "blockContent",
+      validation: (Rule) => Rule.required(),
     },
   ],
 }
